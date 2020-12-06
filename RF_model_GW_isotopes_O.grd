@@ -1,0 +1,26 @@
+[general]
+creator=R package 'raster'
+created=2020-03-30 20:08:39
+[georeference]
+nrows=583
+ncols=1385
+xmin=-124.687499999665
+ymin=25.1458333333347
+xmax=-66.9791666660296
+ymax=49.4375
+projection=NA
+[data]
+datatype=FLT4S
+byteorder=little
+nbands=1
+bandorder=BIL
+categorical=FALSE
+minvalue=-18.7358663809524
+maxvalue=1.72755723132423
+nodatavalue=-3.4e+38
+[legend]
+legendtype=
+values=
+color=
+[description]
+layername=GW_isotope__permil

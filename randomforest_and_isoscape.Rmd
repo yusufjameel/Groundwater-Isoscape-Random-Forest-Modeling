@@ -1,0 +1,36 @@
+---
+title: "Load isoscape and random forest model"
+output: html_document
+---
+
+Note: Save all files from the supplementary material to the same working directory as this code.  This will ensure that the code below will be able to locate the required files
+
+## Isoscapes
+### Load in the isoscapes
+Save the isoscape raster files to the working directory where this code is saved.
+```{r}
+gw_isoscape_d2H <- raster::raster("./RF_model_GW_isotopes_H.grd")
+gw_isoscape_d18O <- raster::raster("./RF_model_GW_isotopes_O.grd")
+
+```
+
+### Create a quick map of the isoscapes
+```{r}
+raster::plot(gw_isoscape_d2H)
+raster::plot(gw_isoscape_d18O)
+```
+
+
+
+## Random forest models
+Load in the random forest models from this study that were used to generate the groundwater isoscapes 
+```{r}
+rf_model_d18O <- readRDS("./RF_d18O.rds") # d18O rf model
+rf_model_d2H <- readRDS("./RF_d2H.rds") # d2H rf model
+```
+
+
+
+
+
+
